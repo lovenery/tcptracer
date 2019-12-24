@@ -88,7 +88,7 @@ func StartMain() {
 	// https://stackoverflow.com/questions/31873396/is-it-possible-to-get-the-current-root-of-package-structure-as-a-string-in-golan
 	_, b, _, _ := runtime.Caller(0)
 	basePath   := filepath.Dir(b)
-	newPath := filepath.Join(basePath, "tcptracer.txt")
+	newPath := filepath.Join(basePath, "tcptracer.bt")
 
 	sourceByte, err := ioutil.ReadFile(newPath)
 	if err != nil {
